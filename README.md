@@ -8,4 +8,4 @@ This course is going to be a fun and intensive hands-on dive into the world of d
 
 After the course you will understand the bigger picture of maker-spaces and fab-labs, what to expect, what can be found in these spaces and how to use that to transform your ideas into tangible artifacts efficiently.
 
-© Krisjanis Rijnieks 2015 / [MIT License](LICENSE.md)
+© Krisjanis Rijnieks 2015 / [MIT License](LICENSE)
