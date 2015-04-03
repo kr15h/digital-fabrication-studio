@@ -276,3 +276,15 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #00008B; }
+
+/* Custom */
+.reveal .background-image-credits {
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  font-size: 0.45em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 3px;
+}
