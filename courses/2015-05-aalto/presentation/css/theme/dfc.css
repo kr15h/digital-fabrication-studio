@@ -47,13 +47,11 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 3.77em; 
-  color: #000;
-  text-shadow: 0 0 75px #000 !important;
-}
+  font-size: 3.77em; }
 .reveal h1.inverted {
-  color: #fff;
-}
+  color: #fff; }
+.reveal h1.shadow {
+  text-shadow: 0 0 75px #000 !important; }
 
 .reveal h2 {
   font-size: 2.11em; }
