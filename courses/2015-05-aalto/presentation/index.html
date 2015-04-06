@@ -292,6 +292,10 @@
 
     <script>
 
+      var soundsLoaded = false;
+      var currentHslide = 0;
+      var currentVslide = 0;
+
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
@@ -312,6 +316,8 @@
           { src: 'reveal.js/plugin/notes/notes.js', async: true }
         ]
       });
+
+
 
       // Define sound files
       var assetsPath = "SoundJS/_assets/audio/";
@@ -338,12 +344,26 @@
     
       function loadComplete(evt) {
         console.log('sound load complete');
+        soundsLoaded = true;
         playSound("slide");
       }
     
       function playSound(name) {
         return createjs.Sound.play(name);
       }
+
+      // Play sound on forward slide change
+      Reveal.addEventListener('slidechanged', function(e) {
+        // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+        console.log(e);
+        if ((e.indexh+1) * (e.indexv+1) > (currentHslide+1) * (currentVslide+1)) {
+          if (soundsLoaded) {
+            playSound("slide");
+          }
+        }
+        currentHslide = e.indexh;
+        currentVslide = e.indexv;
+      });
 
     </script>
 
