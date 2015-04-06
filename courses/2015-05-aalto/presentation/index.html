@@ -287,6 +287,7 @@
 
     <script src="reveal.js/lib/js/head.min.js"></script>
     <script src="reveal.js/js/reveal.js"></script>
+    <script type="text/javascript" src="SoundJS/_assets/libs/preloadjs-NEXT.min.js"></script>
     <script type="text/javascript" src="SoundJS/lib/soundjs-NEXT.min.js"></script>
 
     <script>
@@ -311,6 +312,38 @@
           { src: 'reveal.js/plugin/notes/notes.js', async: true }
         ]
       });
+
+      // Define sound files
+      var assetsPath = "SoundJS/_assets/audio/";
+      var manifest = [
+        {id: "slide", src: assetsPath + "R-Damage.ogg"}
+      ];
+
+      // Instantiate a queue
+      var queue = new createjs.LoadQueue();
+      createjs.Sound.alternateExtensions = ["mp3"];
+      queue.installPlugin(createjs.Sound);
+
+      // Add event listeners to queue
+      queue.addEventListener("complete", loadComplete);
+      queue.addEventListener("error", handleFileError);
+      
+      // Start loading files
+      queue.loadManifest(manifest);
+
+      // Define event listeners
+      function handleFileError(evt) {
+        console.log("error ", evt);
+      }
+    
+      function loadComplete(evt) {
+        console.log('sound load complete');
+        playSound("slide");
+      }
+    
+      function playSound(name) {
+        return createjs.Sound.play(name);
+      }
 
     </script>
 
