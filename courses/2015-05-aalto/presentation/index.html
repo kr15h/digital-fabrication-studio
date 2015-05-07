@@ -308,14 +308,8 @@
 
     <script src="reveal.js/lib/js/head.min.js"></script>
     <script src="reveal.js/js/reveal.js"></script>
-    <script type="text/javascript" src="SoundJS/_assets/libs/preloadjs-NEXT.min.js"></script>
-    <script type="text/javascript" src="SoundJS/lib/soundjs-NEXT.min.js"></script>
 
     <script>
-
-      var soundsLoaded = false;
-      var currentHslide = 0;
-      var currentVslide = 0;
 
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
@@ -336,54 +330,6 @@
           { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
           { src: 'reveal.js/plugin/notes/notes.js', async: true }
         ]
-      });
-
-
-
-      // Define sound files
-      var assetsPath = "SoundJS/_assets/audio/";
-      var manifest = [
-        {id: "slide", src: assetsPath + "R-Damage.ogg"}
-      ];
-
-      // Instantiate a queue
-      var queue = new createjs.LoadQueue();
-      createjs.Sound.alternateExtensions = ["mp3"];
-      queue.installPlugin(createjs.Sound);
-
-      // Add event listeners to queue
-      queue.addEventListener("complete", loadComplete);
-      queue.addEventListener("error", handleFileError);
-      
-      // Start loading files
-      queue.loadManifest(manifest);
-
-      // Define event listeners
-      function handleFileError(evt) {
-        console.log("error ", evt);
-      }
-    
-      function loadComplete(evt) {
-        console.log('sound load complete');
-        soundsLoaded = true;
-        playSound("slide");
-      }
-    
-      function playSound(name) {
-        return createjs.Sound.play(name);
-      }
-
-      // Play sound on forward slide change
-      Reveal.addEventListener('slidechanged', function(e) {
-        // event.previousSlide, event.currentSlide, event.indexh, event.indexv
-        console.log(e);
-        if ((e.indexh+1) * (e.indexv+1) > (currentHslide+1) * (currentVslide+1)) {
-          if (soundsLoaded) {
-            playSound("slide");
-          }
-        }
-        currentHslide = e.indexh;
-        currentVslide = e.indexv;
       });
 
     </script>
