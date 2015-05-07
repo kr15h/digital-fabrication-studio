@@ -188,15 +188,11 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #ffdd00;
-  text-decoration: none;
-  -webkit-transition: color 0.15s ease;
-  -moz-transition: color 0.15s ease;
-  transition: color 0.15s ease; }
+  color: #000000;
+  text-decoration: underline; }
 
 .reveal a:hover {
-  color: #887700;
-  text-shadow: none;
+  color: #999999;
   border: none; }
 
 .reveal .roll span:after {
