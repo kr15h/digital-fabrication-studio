@@ -48,9 +48,9 @@ body {
 
 .reveal h1 {
   font-size: 3.77em; }
-.reveal h1.inverted {
+.reveal .inverted {
   color: #fff; }
-.reveal h1.shadow {
+.reveal .shadow {
   text-shadow: 0 0 75px #000 !important; }
 
 .reveal h2 {
