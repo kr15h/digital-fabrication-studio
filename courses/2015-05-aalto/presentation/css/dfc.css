@@ -282,5 +282,6 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 3px;
+  padding: 3px 6px;
+  text-align: right;
 }
