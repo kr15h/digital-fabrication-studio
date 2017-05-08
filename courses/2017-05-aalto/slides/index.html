@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Digital Fabrication Studio</title>
+
+    <meta name="description" content="An introduction to makerspaces and fab labs">
+    <meta name="author" content="Krisjanis Rijnieks">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="css/dfc.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+
+        <section>
+          <section data-background="assets/fab-lab-house.jpg">
+            <h1 class="inverted shadow">Digital Fabrication Studio</h1>
+            <small>Aalto Fab Lab 2016 Edition<br>
+              by Krisjanis Rijnieks<br>
+              <a href="http://rijnieks.lv">rijnieks.lv</a>
+            </small>
+            <div class="background-image-credits">
+              Photo: Fab Lab House<br>
+              http://www.fablabhouse.com
+            </div>
+          </section>
+
+          <section>
+            <h2>Basic Course Details</h2>
+            <ul>
+              <li>May 16 - June 17, 2016</li>
+              <li>Aalto Fab Lab, project room Projekti A3</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Week 1</h2>
+            <p>May 16–20. I will be here, talking to you, solving problems. We discuss projects, define goals this week.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th style="width:20%">Mo</th>
+                  <th style="width:20%">Tu</th>
+                  <th style="width:20%">We</th>
+                  <th style="width:20%">Th</th>
+                  <th style="width:20%">Fr</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>13-16</td>
+                  <td>13-16</td>
+                  <td>13-16</td>
+                  <td>13-16</td>
+                  <td>13-16</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section>
+            <h2>Week 2</h2>
+            <p>May 23 - 27. I am not here, you are on your own. Charlie will help you with the machines.</p>
+          </section>
+
+          <section>
+            <h2>Week 3</h2>
+            <p>May 30 - June 03. You are on your own again. The goal of this week is to get something tangible ready by the end of the week.</p>
+          </section>
+
+          <section>
+            <h2>Free Week</h2>
+            <p>June 6 - June 10. Is free.</p>
+          </section>
+
+          <section>
+            <h2>Week 4</h2>
+            <p>June 13 - 17. I am back! We focus on finishing our projects and preparing final presentations.</p>
+          </section>
+
+          <section>
+            <h2>1st Week Day Structure</h2>
+            <ol>
+              <li>Introduction</li>
+              <li>Your presentations</li>
+              <li>Discussion</li>
+            </ol>
+          </section>
+
+        </section><!-- / Main -->
+
+        <section>
+          <section>
+            <h1>About</h1>
+          </section>
+
+          <section>
+            <h2>Krisjanis Rijnieks</h2>
+            <ul>
+              <li>Master's student at the Media Lab Helsinki</li>
+              <li>Part of the Fab Lab Berlin</li>
+              <li>Developer of ofxPiMapper–an open source projection mapping tool for the Raspberry Pi</li>
+              <li>Interested in projects related to creative coding, digital fabrication, makerspaces and projection mapping</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Media Lab Helsinki</h2>
+            <p>Recently defended master's thesis that was about about ofxPiMapper - projection mapping tool for the Raspberry Pi. More here: <a target="_blank" href="https://github.com/kr15h/ofxPiMapper">github.com/kr15h/ofxPiMapper</a></p>
+          </section>
+
+          <section>
+            <iframe src="https://player.vimeo.com/video/99651464?byline=0&portrait=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <small>OfxPiMapper workshop at Click festival in Helsingor. May 2014.</small>
+          </section>
+
+          <section>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/AmfcmFdLwm4" frameborder="0" allowfullscreen></iframe>
+            <small>Installation Process at the Spektrum Berlin. Feb 2016.</small>
+          </section>
+
+          <section>
+            <h2>Me at Fab Lab Berlin</h2>
+            <p>Another Fab Lab, but in Berlin. Very nice space. Please visit!</p>
+            <ul>
+              <li>Developing custom software</li>
+              <li>Organizing and running workshops</li>
+              <li>Setting up and repairing machines</li>
+              <li>Consulting and using the space for own projects</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Past</h2>
+            <ul>
+              <li>Painting</li>
+              <li>Flash ActionScript</li>
+              <li>Creative coding</li>
+              <li>Graphic and web design</li>
+              <li>Workshops and other projects</li>
+            </ul>
+          </section>
+
+          <section>
+            <iframe src="https://player.vimeo.com/video/99646304?byline=0&portrait=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <small>You and Now. Light Riga festival 2013.</small>
+          </section>
+
+          <section>
+            <iframe src="https://player.vimeo.com/video/69604996?byline=0&portrait=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <small>Metasphere. Audiovisual performance and installation, 2013.</small>
+          </section>
+        </section><!-- / About -->
+        
+        <section>
+          <section>
+            <h1>This Course</h1>
+          </section>
+
+          <section>
+            <h2>Overview</h2>
+            <ul>
+              <li>Types of spaces</li>
+              <li>Fab Lab, how to make one</li>
+              <li>Business models</li>
+              <li>Technology and available tools</li>
+              <li>Individual projects and solving problems</li>
+            </ul>
+          </section>
+
+          <section>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/49p1JVLHUos" frameborder="0" allowfullscreen></iframe>
+            <small>Inspirational video. 10 Bullets. By Tom Sachs.</small>
+          </section>
+
+        </section><!-- / About the Course -->
+
+        <section>
+          <section>
+            <h1>Spaces</h1>
+          </section>
+  
+          <section>
+            <h2>Types of Spaces</h2>
+            <ul>
+              <li>Hackerspaces</li>
+              <li>Makerspaces</li>
+              <li>Men's sheds</li>
+              <li>Fab Labs</li>
+              <li>Techshops</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Hackerspaces</h2>
+            <p>Hackerspaces are community operated workspaces where people can meet and exchange knowledge mainly about computer hardware and software in the form of peer-to-peer learning, workshops and lectures.</p>
+          </section>
+
+          <section data-background="assets/c-base2.jpg">
+            <div class="background-image-credits">
+              c-base in Berlin<br>by <a target="_blank" href="http://itlabsberlin.de/2013/10/treffen-in-der-raumstation-unter-berlin/">itlabsberlin.de</a>
+            </div>
+          </section>
+
+          <section data-background="assets/london-hackspace.jpg">
+            <div class="background-image-credits">
+              London Hackspace<br>by <a target="_blank" href="https://yoshizen.wordpress.com/tag/london-hackspace/">yoshizen.wordpress.com</a>
+            </div>
+          </section>
+
+          <section data-background="assets/london-hackspace2.jpg">
+            <div class="background-image-credits">
+              London Hackspace<br>by <a target="_blank" href="http://hackaday.com/2014/11/20/hackerspace-tours-london-hackspace/">hackaday.com</a><br>
+            </div>
+          </section>
+  
+          <section>
+            <h2>Makerspaces</h2>
+            <p>It is hard to tell the difference between a hackerspace and a makerspace. A makerspace, one could say, is more connected to the maker culture, making things on one's own, repairing broken things.</p>
+          </section>
+
+          <section>
+            <h2>Makerspaces vs Hackerspaces</h2>
+            <p>Hackerspaces, in contrast to makerspaces, tend to be more political, related to computer and electronics hacking, cryptography.</p>
+          </section>
+
+          <section data-background="assets/makerspace.jpg">
+            <div class="background-image-credits">
+              Palm Beach LED Makerspace<br>by <a target="_blank" href="http://www.pbled.org">pbled.org</a>
+              
+            </div>
+          </section>
+
+          <section>
+            <h2>Men's Sheds</h2>
+            <p>Community operated workplaces in Australia for working-class men with an intention to make men and their family lives better.</p>
+          </section>
+
+          <section data-background="assets/mens-shed.jpg">
+            <div class="background-image-credits">
+              The Forrest Community Men's Shed<br><a target="_blank" href="http://www.forestmensshed.org.au">forestmensshed.org.au</a>
+            </div>
+          </section>
+
+          <section>
+            <h2>TechShops</h2>
+            <p>Commercial makerspaces with power tools for advanced making. A tech shop includes a welding station, wood workshop, plastics lab, along with other tools available at other makerspaces.</p>
+          </section>
+
+          <section data-background="assets/tech-shop.jpg">
+            <div class="background-image-credits">
+              http://www.techshop.ws<br>
+              Photo: makezine.jp
+            </div>
+          </section>
+  
+          <section>
+            <h2>Fab Labs</h2>
+            <p>The &quot;academic&quot; makerspace. Started at the MIT Center of Bits and Atoms by <b>Neil Gershenfeld</b> around 2001.</p>
+
+            <p>Fab Lab is a place equipped with computer controlled tools for personal digital fabrication—for making &quot;almost anything&quot;.</p>
+          </section>
+
+          <section data-background="assets/neil-gershenfeld.jpg">
+            <div class="background-image-credits">
+              Neil Gershenfeld<br>
+              Photo: Steven Senne/AP/SIPA
+            </div>
+          </section>
+
+          <section>
+            <h2>Fab Lab Network</h2>
+            <p>Open creative community with approximately 200 Fab Labs in 40 countries. Even more now. <a href="http://www.fabfoundation.org/" target="_blank">fabfoundation.org</a></p>
+          </section>
+
+          <section>
+            <h2>Fab Academy</h2>
+            <p>Online courses on how to make &quot;almost anything&quot;.<br><a href="http://fabacademy.org" target="_blank">fabacademy.org</a></p>
+
+            <p>Ask Charlie–a 6-month Fab Academy course is still running at the Aalto Fab lab. </p>
+          </section>
+
+          <section>
+            <h2>What Qualifies as a Fab Lab?</h2>
+            <ol>
+              <li>Public access</li>
+              <li>Support and subscription to the <a href="http://fab.cba.mit.edu/about/charter/" target="_blank">Fab Lab Charter</a></li>
+              <li>Same set of <a href="https://docs.google.com/spreadsheets/d/1U-jcBWOJEjBT5A0N84IUubtcHKMEMtndQPLCkZCkVsU/pub?single=true&gid=0&output=html">tools</a> and processes</li>
+              <li>Participation in global Fab Lab network</li>
+            </ol>
+          </section>
+
+          <section>
+            <h2>Basic Tools</h2>
+            <ul>
+              <li>Laser cutter</li>
+              <li>3D printer</li>
+              <li>CNC mill</li>
+              <li>Vinyl cutter</li>
+              <li>Electronics lab</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>What to do in a Fab Lab?</h2>
+            <p>Almost anything. Learn, experiment, prototype, teach others to do the same. Start your own business based on the things you make in a fab lab.</p>
+          </section>
+
+          <section>
+            <h2>More Information</h2>
+            <ul>
+              <li>http://www.fabfoundation.org</li>
+              <li>https://www.fablabs.io</li>
+              <li>http://www.hackerspaces.org</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Makertour.fr</h2>
+            <p>A recent and amazing project by two French students who also visited Fab Lab Berlin recentrly.</p>
+
+            <p><a href="http://www.makertour.fr/" target="_blank">makertour.fr</a></p>
+          </section>
+          
+        </section><!-- / Spaces -->
+
+        <section>
+          <section>
+            <h1>Starting a Fab Lab</h1>
+          </section>
+
+          <section>
+            <h2>10 Things</h2>
+            <p>Massimo Menichinelli, who previously teached this course, created a list of 10 things to consider when starting a fab lab.</p>
+            <small>http://www.openp2pdesign.org/2013/spaces/10-things-to-do-when-starting-a-fablab</small>
+          </section>
+
+          <section>
+            <h2>01. Local Conditions</h2>
+            <p>There are different rules in different places. In one country there are no strict regulations regarding indoor machine use, in another it is almost impossible without spending a lot of money.</p>
+          </section>
+
+          <section>
+            <h2>02. Think About the Community</h2>
+            <p>Is there a local community that could be interested into using a Fab Lab or the community has to be build from scratch?</p>
+          </section>
+
+          <section>
+            <h2>03. Service and Business Model First</h2>
+            <p>Before you start spending money on machines, design the ways how people would work in the space. How the space would profit?</p>
+          </section>
+
+          <section>
+            <h2>04. Hidden Costs</h2>
+            <p>Machines are not the only thing that costs money. Consider that you will have to pay for rent, electricity, tables, chairs and at least 1–3 people running the space.</p>
+          </section>
+
+          <section>
+            <h2>05. Allocate Enough Time</h2>
+            <p>There is always not enough time. Allocate extra time for checking and re-checking if everything works. Machine setup might take more time than you think.</p>
+          </section>
+
+          <section>
+            <h2>06. Balance Team and Resources</h2>
+            <p>Keep the amount of meetings and time for decision making low. 3–4 people is considered a decent amount of people to do the job.</p>
+          </section>
+
+          <section>
+            <h2>07. Careful Choice of Tools</h2>
+            <p>Follow the Fab Lab Inventory maintained by MIT. In case of new machines that are not in the list, consult with other Fab Labs around the globe.</p>
+          </section>
+
+          <section>
+            <h2>08. It Does not Stop With the Machines</h2>
+            <p>One has to learn how to use them and develop a strategy how to teach that knowledge to users of the lab.</p>
+          </section>
+
+          <section>
+            <h2>09. Be a Part of the Network</h2>
+            <p>Don't be a lone wolf, visit other labs. If you are doing things alone, it might be that you don't have much time left for communal activities.</p>
+          </section>
+
+          <section>
+            <h2>10. Test Before Opening</h2>
+            <p>If you have tested the machines already, test again before the inauguration. Developing test projects can be a good way to showcase what can be done in the lab.</p>
+          </section>
+          
+        </section><!-- / 10 Things -->
+
+        <section>
+          <section>
+            <h1>Business Models</h1>
+          </section>
+
+          <section>
+            <h2>Business Model</h2>
+           <blockquote>
+             &quot;A hypothesis about what customers want, how they want it, and how an enterprise can organize to best meet those needs, get paid for doing so, and make profit.&quot;
+           </blockquote>
+           <small>—http://www.sciencedirect.com/science/article/pii/S002463010900051X</small>
+          </section>
+
+          <section>
+            <h2>Business Plan</h2>
+            <p>A detailed plan built upon a business model, explains the steps needed to achieve goals stated in the business model. It can have many phases.</p>
+          </section>
+
+          <section>
+            <h2>Business Model Factors</h2>
+            <ul>
+              <li>A group of people (customers)</li>
+              <li>The needs of those customers</li>
+              <li>A thing that your business can do to meet those needs</li>
+              <li>Organisational practices that help to achieve this goal—and to be able to carry on doing so, sustainably</li>
+              <li>A success criterion, such as making a profit</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>The Business Model Canvas</h2>
+            <p>One of the most popular templates for working on a business model is the Business Model Canvas by Alexander Osterwalder. He has also a startup—the Business Model Foundry.</p>
+            <small>https://strategyzer.com</small>
+          </section>
+
+          <section data-background="assets/business-model-canvas.jpg">
+            <div class="background-image-credits">
+              Business Model Canvas<br>
+              https://strategyzer.com
+            </div>
+          </section>
+
+          <section>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/Dqakc-VuKjs?rel=0" frameborder="0" allowfullscreen></iframe>
+          </section>
+
+          <section>
+            <h2>Business Model Secrecy</h2>
+            <blockquote>
+              “Your business plan cannot be secret anymore. People are too smart for that, too tired of getting burned, too wary of losing their contributions when a startup dies, and too annoyed by sudden changes to terms. Communicate your business plan from the start and you'll avoid a thousand problems down the road.”
+            </blockquote>
+            <small>—http://powazek.com/posts/3250</small>
+          </section>
+
+          <section>
+            <h2>Fab Lab Business Model</h2>
+            <blockquote>
+              “commercial activities can be incubated in Fab Labs but they must not conflict with open access, they should grow beyond rather than within the lab, and they are expected to benefit the inventors, labs, and networks that contribute to their success.”
+            </blockquote>
+            <small>—http://fab.cba.mit.edu/about/charter</small>
+          </section>
+
+          <section>
+            <h2>Fab Lab Iceland Models</h2>
+            <ol>
+              <li>The Enabler business model<br>
+                <small>Launch new and sustain existing Fab Labs</small>
+              </li>
+              <li>The Education business model<br>
+                <small>Provide education services to other Fab Labs</small>
+              </li>
+              <li>The Incubator business model<br>
+                <small>Help entrepreneurs create sustainable businesses out of their Fab Lab creations</small>
+              </li>
+              <li>The Replicated / Network business model<br>
+                <small>Provide a product or service that operates by utilizing the infrastructure, staff and expertise of many (or all) Fab Labs</small>
+              </li>
+            </ol>
+          </section>
+
+          <section>
+            <h2>Common Goal</h2>
+            <p>According to a research by Peter Troxler (2010), most of the fab labs offer infrastructure to students and are mostly university funded. The common goal is to figure out a self-sustainable business model for fab labs.</p>
+          </section>
+
+          <section>
+            <h2>For Your Own Ideas</h2>
+            <p>There are a plenty of information, videos and tools on the Internet that let you analyze and validate your business idea.</p>
+          </section>
+
+          <section>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/jHyU54GhfGs?rel=0" frameborder="0" allowfullscreen></iframe>
+          </section>
+
+        </section><!-- / Business Models -->
+
+        <section>
+          <section>
+            <h1>3D Printing</h1>
+          </section>
+
+          <section data-background="assets/3dprinting-anouk-audi-1.jpg">
+            <div class="background-image-credits">
+              3D Printed Audi A3 Dress<br>
+              by Anouk Wipprecht<br>
+              <a href="http://anoukwipprecht.nl" target="_blank">anoukwipprecht.nl</a>
+            </div>
+          </section>
+
+          <section data-background="assets/3dprinting-anouk-audi-2.jpg">
+            <div class="background-image-credits">
+              3D Printed Audi A3 Dresses<br>
+              by Anouk Wipprecht<br>
+              <a href="http://anoukwipprecht.nl" target="_blank">anoukwipprecht.nl</a>
+            </div>
+          </section>
+
+           <section data-background="assets/3dprinting-sls-bike-parts.jpg">
+            <div class="background-image-credits">
+              3D Printed Bike Parts<br>
+              <a href="http://www.bikerumor.com/" target="_blank">bikerumor.com</a>
+            </div>
+          </section>
+
+          <section data-background="assets/3dprint-batman.jpg">
+            <div class="background-image-credits">
+              3D Printed Batman Suit<br>
+              <a href="http://3dprint.com/34541/batman-arkham-origins-suit" target="_blank">3dprint.com</a>
+            </div>
+          </section>
+
+          <section data-background="assets/3dprinting-decorative-prosthetics.jpg">
+            <div class="background-image-credits">
+              3D Printed Titanium Prosthetic<br>
+              <a href="http://io9.gizmodo.com/" target="_blank">gizmodo.com</a>
+            </div>
+          </section>
+
+          <section data-background="assets/3dprinting-sls-jet-engine.jpg">
+            <div class="background-image-credits">
+              3D Printed Jet Engine<br>
+              <a href="http://www.independent.co.uk/life-style/gadgets-and-tech/3d-printer-creates-jet-engine-in-world-first-10072740.html" target="_blank">independent.co.uk</a><br>
+              Photo by Routers
+            </div>
+          </section>
+
+          <section data-background="assets/3dprinting-shoes-1.jpg">
+            <div class="background-image-credits">
+              3D Printed Designer Shoes<br>
+              <a href="http://robinverdegaal.nl/" target="_blank">robinverdegaal.nl</a>
+            </div>
+          </section>
+
+          <section data-background="assets/3dprinting-shoes-2.jpg">
+            <div class="background-image-credits">
+              3D Printed Adidas Shoes<br>
+              <a href="http://adidas.com/" target="_blank">adidas.com</a>
+            </div>
+          </section>
+
+          <section>
+            <h2>Additive Manufacturing</h2>
+            <p>3D Printing process for creating a three-dimensional object by adding material rather than removing it as in the case of subtractive manufacturing where material is being removed.</p>
+          </section>
+
+          <section>
+            <h2>3D Printing</h2>
+            <p>The main form of additive manufacturing today that includes different techniques of creating a real-life three-dimensional object.</p>
+          </section>
+
+          <section>
+            <h2>Fused Deposition Modeling</h2>
+            <p>With FDM three-dimensional objects are made by adding material in layers. The material can be plastic filament or metal wire, as well as concrete or plaster.</p>
+          </section>
+
+          <section data-background="assets/d-shape.jpg">
+            <div class="background-image-credits">
+              The D-Shape 3D Printer
+            </div>
+          </section>
+
+          <section data-background="assets/d-shape-process.jpg">
+            <div class="background-image-credits">
+              The D-Shape 3D Printing Process
+            </div>
+          </section>
+
+          <section data-background="assets/d-shape-result.jpg">
+            <div class="background-image-credits">
+              The D-Shape 3D Printing Result
+            </div>
+          </section>
+
+          <section data-background="assets/reprap-prusa-i3.jpg">
+            <div class="background-image-credits">
+              RepRap Prusa Iteration 3 (i3)
+            </div>
+          </section>
+
+          <section data-background="assets/i3berlin.jpg">
+            <div class="background-image-credits">
+              i3Berlin 3D Printer
+            </div>
+          </section>
+
+          <section data-background="assets/makerbot-replicator.jpg">
+            <div class="background-image-credits">
+              MakerBot Replicator
+            </div>
+          </section>
+
+          <section>
+            <h2>FDM History</h2>
+            <p>The technology was developed by S. Scott Crump in the late 1980s and was commercialized in 1990 by Stratasys. In 2009 the patent expired, thus allowing anyone to use the technology.</p>
+          </section>
+
+          <section>
+            <h2>FDM Popularity Today</h2>
+            <p>The expiration of the patent gave birth to many kinds of open-source FDM 3D printers, as for example the RepRap project. The MakerBot is a descendant of the RepRap.</p>
+          </section>
+
+          <section>
+            <h2>Selective Laser Sintering</h2>
+            <p>SLS is an additive manufacturing technique that uses laser to sinter powdered material (usually metal) to create a three-dimensional object.</p>
+          </section>
+
+          <section>
+            <h2>SLS Development</h2>
+            <p>Developed and patented by Dr. Carl Deckard and academic adviser, Dr. Joe Beaman at the University of Texas at Austin in the mid-1980s, under sponsorship of DARPA (Defense Advanced Research Projects Agency).</p>
+          </section>
+
+          <section>
+            <h2>SLS Patent</h2>
+            <p>On January 28, 2014 (just now), the patent for the Selective Laser Sintering method expired and that means new affordable SLS 3D printers on the market soon.</p>
+          </section>
+
+          <section>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/9E5MfBAV_tA?rel=0" frameborder="0" allowfullscreen></iframe>
+          </section>
+
+          <section data-background="assets/open-sls.jpg">
+            <div class="background-image-credits">
+              OpenSLS<br>
+              <a href="http://www.andreasbastian.com/opensls" target="_blank">andreasbastian.com/opensls</a>
+            </div>
+          </section>
+
+          <section>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/zVUom5XnrIs?rel=0" frameborder="0" allowfullscreen></iframe>
+          </section>
+
+          <section>
+            <h2>Stereolithography</h2>
+            <p>Optical fabrication or Resin printing, a additive manufacturing technique where light is used to solidify layers of resin in order to produce a three-dimensional object.</p>
+          </section>
+
+          <section>
+            <h2>Patenting</h2>
+            <p>The process was patented as a means of rapid prototyping in 1986 by Charles Hull, co-founder of 3D Systems, Inc., a leader in the 3D printing industry.</p>
+            <small>http://www.livescience.com/38190-stereolithography.html</small>
+          </section>
+
+          <section>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/NM55ct5KwiI?rel=0" frameborder="0" allowfullscreen></iframe>
+          </section>
+
+          <section data-background="assets/formlabs.jpg">
+            <div class="background-image-credits">
+              Formlabs Form 1<br>
+              <a href="http://formlabs.com" target="_blank">formlabs.com</a>
+            </div>
+          </section>
+
+          <section>
+            <h2>STL File Format</h2>
+            <p>The STereoLithography file format invented by 3D Systems inc. Stores triangulated 3D surface using the three-dimensional Cartesian coordinate system.</p>
+          </section>
+
+          <section>
+            <h2>Slicing</h2>
+            <p>Generates layer information in the form of machine instructions for the 3D printer from an STL file usually.</p>
+          </section>
+
+          <section>
+            <h2>G-Code File Format</h2>
+            <p>Many variants of a file format for controlling automated machine tools. This file format applies not only to 3D printers but to CNC routers and other machines as well.</p>
+          </section>
+
+          <section>
+            <h2>Slicers</h2>
+            <ul>
+              <li><a href="https://ultimaker.com/en/products/software" target="_blank">Cura</a><br>
+              <small>Free</small></li>
+              <li><a href="https://www.simplify3d.com/" target="_blank">Simplify 3D</a><br>
+              <small>150€</small></li>
+              <li><a href="http://www.kisslicer.com" target="_blank">Kissslicer</a><br>
+              <small>Free, pro version 50€</small></li>
+              <li><a href="http://slic3r.org" target="_blank">Slic3r</a><br>
+              <small>Free donation</small></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>3D Modelling Software</h2>
+            <ul>
+              <li>123D</li>
+              <li>FreeCAD</li>
+              <li>Fusion 360</li>
+              <li>OnShape</li>
+              <li>Tinkercad</li>
+              <li>OpenSCAD</li>
+              <li>Blender</li>
+              <li>SketchUp</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>123D Suite</h2>
+            <p>A suite with easy to use tools and services for making.</p>
+            <small>http://www.123dapp.com</small>
+          </section>
+
+          <section>
+            <h2>FreeCAD</h2>
+            <p>FreeCAD is a parametric 3D modeler made primarily to design real-life objects of any size.</p>
+            <small>http://www.freecadweb.org</small>
+          </section>
+
+          <section>
+            <h2>Fusion360</h2>
+            <p>Parametric 3D modelling software for product designers.</p>
+            <small>http://www.autodesk.com/products/fusion-360</small>
+          </section>
+
+          <section>
+            <h2>Tinkercad</h2>
+            <p>A simple to use online tool for creating and printing 3D models.</p>
+            <small>https://www.tinkercad.com</small>
+          </section>
+
+          <section>
+            <h2>OpenSCAD</h2>
+            <p>The open-source programmers choice for advanced making. Creates CAD models from scripts.</p>
+            <small>http://www.openscad.org</small>
+          </section>
+
+          <section>
+            <h2>Blender</h2>
+            <p>Multipurpose open-source and free 3D modelling, animation and game design software.</p>
+            <small>http://www.blender.org</small>
+          </section>
+
+          <section>
+            <h2>SketchUp</h2>
+            <p>Easy to use and free 3D modelling software, mainly used by architects and interior designers, but suitable for making as well.</p>
+            <small>http://www.sketchup.com</small>
+          </section>
+
+        </section><!-- / 3D Printing -->
+
+        <section>
+          <section>
+            <h1>Further Reading</h1>
+          </section>
+
+          <section>
+            <ul>
+              <li>Designing the Internet of Things<br>
+                <small>Adrian McEwen &amp; Hakim Cassimally</small>
+              </li>
+              <li>Fab: The Coming Revolution on Your Desktop—From Personal Computers to Personal Fabrication<br>
+                <small>Neil Gershenfeld</small>
+              </li>
+              <li>The Makerspace Workbench: Tools, Technologies and Techniques for Making<br>
+                <small>Adam Kemp</small>
+              </li>
+              <li>Printing Things: Visions and Essentials for 3D Printing<br>
+                <small>Edited by Claire Warnier, Dries Verbruggen, Sven Ehmann, Robert Klanten</small>
+              </li>
+            </ul>
+          </section>
+        </section><!-- / Further Reading -->
+
+      </div><!-- /.slides -->
+
+    </div><!-- /.reveal -->
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
