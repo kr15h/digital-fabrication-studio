@@ -4,10 +4,11 @@ Welcome to the Digital Fabrication Studio course home page! Here you can find ba
 
 ## Current Course
 
-May 16 - June 17, 2016. Aalto Fab Lab. [Slides](http://kr15h.github.io/digital-fabrication-studio/courses/2016-05-aalto/slides)
+May 8 - June 9, 2016. Aalto Fab Lab. [Slides](http://kr15h.github.io/digital-fabrication-studio/courses/2016-05-aalto/slides)
 
 ## Past Courses
 
+- May 16 - June 17, 2016. Aalto Fab Lab. [Slides](http://kr15h.github.io/digital-fabrication-studio/courses/2016-05-aalto/slides)
 - May 11 - June 12, 2015. Aalto Fab Lab. [Slides](http://kr15h.github.io/digital-fabrication-studio/courses/2015-05-aalto/presentation)
 
 ## Digital Fabrication Unlocked
@@ -16,4 +17,4 @@ This course is going to be a fun and intensive hands-on dive into the world of d
 
 After the course you will understand the bigger picture of maker-spaces and fab-labs, what to expect, what can be found in these spaces and how to use that to transform your ideas into tangible artifacts efficiently.
 
-© Krisjanis Rijnieks 2015 / [MIT License](LICENSE)
+© Krisjanis Rijnieks 2017 / [MIT License](LICENSE.md)
