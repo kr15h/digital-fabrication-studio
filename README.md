@@ -4,7 +4,7 @@ Welcome to the Digital Fabrication Studio course home page! Here you can find ba
 
 ## Current Course
 
-May 8 - June 9, 2016. Aalto Fab Lab. [Slides](http://kr15h.github.io/digital-fabrication-studio/courses/2016-05-aalto/slides)
+May 8 - June 9, 2017. Aalto Fab Lab. [Slides](http://kr15h.github.io/digital-fabrication-studio/courses/2017-05-aalto/slides)
 
 ## Past Courses
 
